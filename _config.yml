@@ -1,3 +1,6 @@
+name: Scott Carr's website
+description: A place where Scott Carr puts stuff on the web 
+url: scottcarr.github.com
 permalink: /:title
 tag_dir: tag
 tag_title_prefix: "Tags &raquo; "

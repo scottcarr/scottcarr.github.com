@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<article>
-    <time datetime="{{page.date | date: "%Y-%m-%d"}}">{{page.date | date: "<span class='month-day'>%B %e</span> <span class='year'>%Y</span>"}}</time>
-	<h1 class="title">{{page.title}}</h1>
-	{{content}}
-    {% include next_action.md %}
-</article>
+<div class="container">
+  <article>
+      <time datetime="{{page.date | date: "%Y-%m-%d"}}">{{page.date | date: "<span class='month-day'>%B %e</span> <span class='year'>%Y</span>"}}</time>
+    <h1 class="title">{{page.title}}</h1>
+    {{content}}
+      {% include next_action.md %}
+  </article>
+</div>
 
 

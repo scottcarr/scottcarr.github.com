@@ -2,8 +2,11 @@
 layout: post
 published: true
 title: Making websites should be easier
-summary: There should be native app quality tools for making websites
+summary: As important as websites are there should be better tools for building them.
 ---
+*Update: I've moved to Jekyll + Twitter Bootstrap and I'm really happy with it
+so far.  Many of my ideas in this post still apply, but I should do an updated
+verison of this post.*
 
 I can whip up a GUI application in C# or Java in seconds, and more importantly, when something doesn’t look or work the way I want, I know exactly where to look in the code.  I have yet to find a tool for building websites that has the same ease of development as a native application.  There should be a tool that lets you drag around widgets (like a native app GUI editor) and the glue it together with OnClick handlers.
 

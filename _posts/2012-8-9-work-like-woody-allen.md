@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Work like Woody Allen
-summary: How do you a great movie?  Try 60 times.
+summary: How do you make a great movie?  Try 60 times.
 ---
 
 Woody Allen has credits in something like 50 or 60 movies.  In *Woody Allen: A

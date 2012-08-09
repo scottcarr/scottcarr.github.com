@@ -10,9 +10,8 @@ Documentry* he describes his work habit as immediately starting on the next
 right after finishing a movie.  He figures if he makes enough movies, some of
 them will be good.
 
-![Woody Allen: A Documentary box art]
-(http://ecx.images-amazon.com/images/I/51nmsgt602L._SL500_AA300_.jpg 
-"Wood Allen: A Documentary")
+<img src="http://ecx.images-amazon.com/images/I/51nmsgt602L._SL500_AA300_.jpg" 
+alt="Woody Allen: A Documentary box art" style="float: right">
 
 I want to try embracing that philosphy more.  Recently, when I finished an
 application I had been working on, I realized it'd be much cleaner if I'd

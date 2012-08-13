@@ -3,14 +3,25 @@ layout: default
 title_element: h1
 ---
 <div class="container">
+  <h2>Scott is a graduate student of Computer Science
+    at <a href="purdue.edu">Purdue University</a>.  
+  </h2>
+  <h4>For more information about Scott, please see the 
+        <a href="/about.html">About</a> page.</a>
+  </h4>
+  <br><br>
   <div class="row">
-    <div class="span8">
+    <div class="span4">
+      <div class="page-header">
+        <h1>Blog posts</h1>
+      </div>
+
       <section class="posts">
       {% for post in site.posts limit:20 %}
           {% if post.published == true %}
               <article>
-                    <time datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "<span class='month-day'>%B %e</span> <span class='year'>%Y</span>"}}</time>
-                    <h1 class="title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h1>
+              <!--<time datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "<span class='month-day'>%B %e</span> <span class='year'>%Y</span>"}}</time> -->
+                    <h2 class="title"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
                     <section class="summary">
                       {{post.summary}}
                     </section>
@@ -20,14 +31,23 @@ title_element: h1
           {% endif %}
       {% endfor %}
       </section>
-    </div>
-  <div class="row">
-    <div class="span4">
-      <h3>Looking for more posts?</h3>
+      <h3>More posts:</h3>
       <ul>
         <li><a href="/feed.xml">RSS</a></li>
-        <li><a href="archive.html">Archive<a></li>
+        <li><a href="archive.html">Archive</a></li>
       </ul>
+    </div>
+    <div class="span4">
+      <div class="page-header">
+        <h1>Projects</h1>
+      </div>
+      <p>Eventually the projects Scott is working on will be listed here.</p>
+    </div>
+    <div class="span4">
+      <div class="page-header">
+        <h1>Papers</h1>
+      </div>
+      <p>Eventually Scott's papers will be listed here.</p>
     </div>
   </div>
 </div>

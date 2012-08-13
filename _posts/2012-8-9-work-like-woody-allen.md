@@ -15,7 +15,7 @@ alt="Woody Allen: A Documentary box art" style="float: right">
 
 I want to try embracing that philosphy more.  Recently, when I finished an
 application I had been working on, I realized it'd be much cleaner if I'd
-architected it differently.  Only by completely my initial version of the
+architected it differently.  Only by completing my initial version of the
 application did I fully understand the problem I was trying to solve.  In this
 case I was able to rewrite everything from scratch in using the new architecture
 in a fraction of the time it took me originally.  Once I have the write

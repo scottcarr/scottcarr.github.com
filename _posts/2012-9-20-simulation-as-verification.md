@@ -2,8 +2,7 @@
 layout: post
 published: true
 title: Simulation as verification
-summary: We need simulation as part of the research process. To what extent
-does it replace testing on a real system?
+summary: We need simulation as part of the research process. To what extent does it replace testing on a real system?
 ---
 
 To get up to speed on the current trend of computer science research, I've

@@ -10,12 +10,8 @@ anymore, with no memory of how I got there.  The first five weeks of
 semester one have flown by.  In order to prevent my experiences from disappearing into the
 void where my long term memory should be, I'll record them here.
 
-Tonight I attended a diversity seminar.  I was anticipating struggling to stay awake.
-It ended up being pretty interesting, but I see a missed opportunity.  The
-seminar attendees looked like the United Nations.  We could have had a
-fascinating discussion about the real diversity issues at a multi-cultural /
-multi-national organization like Purdue.  The trick would be getting us
-introverted science nerds to actually talk to each other.
+Tonight I attended a diversity seminar.  I wonder if political correctness 
+sometimes prevents an open dialog.
 
 Classes are going well - lots of homework.  I believe there is a correlation
 between the number of TAs a professor has for a course and the amount of

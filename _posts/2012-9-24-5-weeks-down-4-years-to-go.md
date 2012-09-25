@@ -22,7 +22,7 @@ between the number of TAs a professor has for a course and the amount of
 homework assigned.
 
 I've no idea how to measure research progress.  It feels like we're moving
-forward.  Yesterday, I was considering writing a blog post reflection on a
+forward.  Yesterday, I was considering writing a blog post reflecting on a
 quote by Einstein.
 
 > If we knew what it was we were doing, it would not be called research, would

@@ -27,11 +27,11 @@ a quote by Einstein.
 
 > If we knew what it was we were doing, it would not be called research, would it?
 
-Those words maybe be reassurance or a justification for lack of progress depending
-on the specific situation.
+Depending on the situation, those words maybe be reassurance or a justification 
+for lack of progress. 
 
 It's definitely not an "if an only if" statement.  Let us not be followed into
-believing not knowing what were doing means we are doing research.
+believing not knowing what we are doing implies we are doing research.
 
 
 

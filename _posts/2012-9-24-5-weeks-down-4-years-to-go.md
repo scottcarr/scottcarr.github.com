@@ -10,7 +10,7 @@ anymore, with no memory of how I got there.  The first five weeks of
 semester one have flown by.  In order to prevent my experiences from disappearing into the
 void where my long term memory should be, I'll record them here.
 
-Tonight I attended a diversity seminar.  I was anticipating struggling to stay awake.  
+Tonight I attended a diversity seminar.  I was anticipating struggling to stay awake.
 It ended up being pretty interesting, but I see a missed opportunity.  The
 seminar attendees looked like the United Nations.  We could have had a
 fascinating discussion about the real diversity issues at a multi-cultural /

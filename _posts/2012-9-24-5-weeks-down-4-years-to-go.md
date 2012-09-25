@@ -25,8 +25,7 @@ I've no idea how to measure research progress.  It feels like we're moving
 forward.  Yesterday, I was considering writing a blog post reflection on
 a quote by Einstein.
 
-    If we knew what it was we were doing, it would not be called research,
-    would it?
+    If we knew what it was we were doing, it would not be called research, would it?
 
 Those words maybe be reassurance or a justification for lack of progress depending
 on the specific situation.

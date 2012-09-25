@@ -28,7 +28,7 @@ quote by Einstein.
 > If we knew what it was we were doing, it would not be called research, would
 > it?
 
-Depending on the situation, those words maybe be reassurance or a justification
+Depending on the situation, those words could be reassurance or a justification
 for lack of progress. 
 
 It's definitely not an "if an only if" statement.  Let us not be followed into

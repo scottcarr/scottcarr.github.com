@@ -26,7 +26,7 @@ forward.  Yesterday, I was considering writing a blog post reflection on a
 quote by Einstein.
 
 > If we knew what it was we were doing, it would not be called research, would
-it?
+> it?
 
 Depending on the situation, those words maybe be reassurance or a justification
 for lack of progress. 

@@ -2,13 +2,13 @@
 layout: post
 published: true
 title: Reasoning from first principles
-summary: And avoiding reasoning by simile.
+summary: And avoiding reasoning by simile
 ---
 
 Kevin Rose (founder of digg.com) recently interviewed Elon Musk (of Tesla, SpaceX,
 PayPal fame).
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/L-s_3b5fRd8" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/L-s_3b5fRd8" frameborder="0" allowfullscreen="allowfullscreen">Interview</iframe>
 
 Rose asked Musk how he decided to undertake such ambitious projects as build electric cars
 and rockets.  (Musk is the founder of SpaceX and Tesla Motors.) Musk replied

@@ -5,8 +5,8 @@ title: Reasoning from first principles
 summary: And avoiding reasoning by simile
 ---
 
-Kevin Rose (founder of digg.com) recently interviewed Elon Musk (of Tesla, SpaceX,
-PayPal fame).
+Kevin Rose (founder of digg.com) recently interviewed Elon Musk (founder of Tesla, SpaceX,
+PayPal).
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/L-s_3b5fRd8" frameborder="0" allowfullscreen="allowfullscreen">Interview</iframe>
 

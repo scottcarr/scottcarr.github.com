@@ -10,11 +10,8 @@ PayPal).
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/L-s_3b5fRd8" frameborder="0" allowfullscreen="allowfullscreen">Interview</iframe>
 
-Rose asked Musk how he decided to undertake such ambitious projects as build electric cars
-and rockets.  (Musk is the founder of SpaceX and Tesla Motors.) Musk replied
-when those things will impact the future of humanity in the biggest way.
-
-On the topic of advise for aspiring entrepreneurs, Musk gave two main points:
+The most interesting question was about Musk's advice to aspiring entrepreneurs.
+He gave two main points:
 
 First, seek out negative feedback.  We love to be praised and hate to be criticized,
 so we ignore negative feedback as a defense mechanism.  Another problem is:

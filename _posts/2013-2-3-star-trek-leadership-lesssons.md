@@ -18,6 +18,6 @@ and morally principled mission.  There is a strong sense of their work being
 for the good of humanity (and non-human aliens as well).  Decision making
 ultimately falls to our fearless leader but his decision process is almost
 entirely determined by a principle shared with every member of the crew 
-(The Prime Directive).  This is the work environment engineers dream of.  Plus
+([The Prime Directive](http://en.wikipedia.org/wiki/Prime_Directive)).  This is the work environment engineers dream of.  Plus
 medical technology as advanced to the point that we're virtually indestructible 
 (as long as you're a main character).

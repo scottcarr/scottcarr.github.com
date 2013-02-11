@@ -44,5 +44,7 @@ The inevitable timeline of a flying car company is:
 7. Go out of business since you're not making any sales
 
 You don't have to take my word for it.  See this [video interview with Boeing CTO John Tracy](http://fora.tv/2012/10/30/Boeing_CTO_John_Tracy_The_Future_of_Flight) 
-He's asked a question about flying cars towards the end.  By the way, it's
+He's asked a question about flying cars towards the end.  He says we have the 
+technology to make flying cards but the problem is the pilots.  Interpret that
+as you will. By the way, it's
 a really neat interview.  I recommend watching the whole thing.

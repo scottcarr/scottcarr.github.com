@@ -5,7 +5,7 @@ title: You can have your flying car as soon as you sign this EULA
 summary: By driving this plane/car you agree ...
 ---
 
-The Founders Fund slogan says, "We wanted flying cars, instead we got 140
+The [Founders Fund](http://www.foundersfund.com/) slogan says, "We wanted flying cars, instead we got 140
 characters."
 
 Why do we have Twitter, but not flying cars?  One big reason is liability.

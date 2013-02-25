@@ -103,8 +103,13 @@ of post for code).
 
 As a simple first test, I tried P = 0.5, I = 0.0, D = 0.0.  This is not really
 a PID controller, but just a P controller.  Here's what I got:
-
 <img src="https://raw.github.com/scottcarr/scottcarr.github.com/master/images/pid_cont_p.png">
+
+Ahh, the good 'ol P term.  He's slow but he's reliable.  The P=0.5 controller
+isn't half bad if you ask me.
+
+For a cooler graph, I used P=0.5, I=0.2, D=0.2:
+<img src="https://raw.github.com/scottcarr/scottcarr.github.com/master/images/pid_cont_pid.png">
   
 
 graphcont.py:

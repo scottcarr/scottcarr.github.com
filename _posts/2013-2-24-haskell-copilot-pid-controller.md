@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: A PID controller simulation in a Haskell DSL called Copilot
-summary: 
+summary: Consciousness is just a sampled version of the infinite stream of reality
 ---
 
 I stumbled onto a Haskell DSL called [Copilot](http://leepike.github.com/Copilot/) 
@@ -20,9 +20,9 @@ is the container around the monitor, the trigger, and the streams.  The trigger
 is the function to call when the monitored condition occurs.
 
 The idea of infinite samples streams reminded me of Simulink, so I decided to build
-a PID controller simulaton.
+a PID controller simulation.
 
-Below is my spec:
+Below is my spec, simplified for clarity:
 
     impulseResponse :: Spec                                                            
     impulseResponse = do                                                               
@@ -30,8 +30,8 @@ Below is my spec:
       trigger "danger!"                                                                
         (maxErrExceeded) []                                                            
 
-The name of the spec is impulseResponse, my trigger function to call is
-called danger! and my monitoring condition is maxErrExceeded.  Observers
+The name of the spec is _impulseResponse_, my trigger function to call is
+called _danger!_ and my monitoring condition is _maxErrExceeded_.  Observers
 are used to monitor the value of the streams.  The have the form:
 
     observer "description" (variable_name)
@@ -59,8 +59,8 @@ the integral:
       integral :: Stream Double     -- integral of the error
       dedt :: Stream Double         -- derivative of the error
 
-Calculating the streams is the fun part.  The input (y) is the most straightfoward.
-All I wanted was an impulse, so I made an infinit stream of ones and added
+Calculating the streams is the fun part.  The input (y) is the most straightforward.
+All I wanted was an impulse, so I made an infinite stream of ones and added
 some zeros at the beginning:
 
       y = [0.0, 0.0, 0.0, 0,0] ++ 1.0 -- input is an impulse
@@ -73,7 +73,7 @@ Error is just input minus output
 
       e = y - u -- the error stream
 
-Adding a zero infront of a stream has the effect of "delaying" it one tick.
+Adding a zero in front of a stream has the effect of "delaying" it one tick.
 To calculate the derivative of the error, I delay the error stream one tick
 and subtract it from itself:
 
@@ -105,14 +105,58 @@ As a simple first test, I tried P = 0.5, I = 0.0, D = 0.0.  This is not really
 a PID controller, but just a P controller.  Here's what I got:
 <img src="https://raw.github.com/scottcarr/scottcarr.github.com/master/images/pid_cont_p.png">
 
-Ahh, the good 'ol P term.  He's slow but he's reliable.  The P=0.5 controller
+Ahh, the good old P term.  He's slow but he's reliable.  The P=0.5 controller
 isn't half bad if you ask me.
 
 For a cooler graph, I used P=0.5, I=0.2, D=0.2:
 <img src="https://raw.github.com/scottcarr/scottcarr.github.com/master/images/pid_cont_pid.png">
   
+Now, that looks like something from my Control Systems textbook.
 
+That's all.  A simulation of a PID controller over infinite streams written in Haskell
+is pretty cool if you ask me.
+
+Here's my complete code:
+
+impulse.hs:
+
+    import Language.Copilot
+    import qualified Prelude as P
+
+    impulseResponse :: Spec
+    impulseResponse = do
+      observer "dedt" (dedt)
+      observer "int." (integral)
+      observer "y" (y)
+      observer "u" (u)
+      observer "e" (e)
+      trigger "danger!"
+        (maxErrExceeded) []
+      where
+
+      p = 0.5   -- P term coefficient
+      i = 0.2   -- I term coefficient
+      d = 0.2   -- D term coefficient
+
+      y :: Stream Double -- controller input
+      u :: Stream Double -- controller output
+      e :: Stream Double -- error between the input an output
+      integral :: Stream Double -- integral of the error
+      dedt :: Stream Double -- derivative of the error
+
+      y = [0.0, 0.0, 0.0, 0,0] ++ 1.0 -- input is an impulse
+      u = [0.0] ++ command 
+      e = y - u
+      dedt = e - ([0.0] ++ e)
+      integral = [0.0] ++ integral + e
+
+      command = u + e * p + integral * i + d * dedt -- a tradition PID controller
+
+      maxErrExceeded :: Stream Bool
+      maxErrExceeded = e > 0.2 -- the condition to monitor
+  
 graphcont.py:
+
     import numpy as np                                                                 
     from pylab import *                                                                
                                                                                        

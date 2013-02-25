@@ -104,7 +104,7 @@ of post for code).
 As a simple first test, I tried P = 0.5, I = 0.0, D = 0.0.  This is not really
 a PID controller, but just a P controller.  Here's what I got:
 
-<img src=
+<img src="https://raw.github.com/scottcarr/scottcarr.github.com/master/images/pid_cont_p.png">
   
 
 graphcont.py:

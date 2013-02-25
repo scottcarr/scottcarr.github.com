@@ -99,8 +99,9 @@ my spec the normal Copilot way:
 
     interpret 50 impulseResponse
 
-I put the output into a .txt file and graphed it with a python script (see end
-of post for code).
+This runs my simulation and tells me when the trigger happens (and what the
+value of the observed streams are, if any).  I put the output into a .txt file
+and graphed it with a python script (see end of post for code).
 
 As a simple first test, I tried P = 0.5, I = 0.0, D = 0.0.  This is not really
 a PID controller, but just a P controller.  Here's what I got:

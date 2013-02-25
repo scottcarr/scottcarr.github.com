@@ -9,14 +9,14 @@ I stumbled onto a Haskell DSL called [Copilot](http://leepike.github.com/Copilot
 for building software health monitors in embedded systems.
 
 The physical part of a cyber-physical system is continuous, so infinite streams
-of data a good models for their inputs.  Consider an autopilot in a plane.  It
+of data are good models for their inputs.  Consider an autopilot in a plane.  It
 it might sample an altitude sensor periodically, but it needs to keep doing that for
 an unknown amount of time (until the plane lands).  It can't buffer data, it 
-needs to handle each sample as it comes.
+needs to handle each sample as it arrives.
 
 Copilot makes it simple to use infinite sampled data streams in Haskell.  External
-streams represent the sensor (or other) data coming into the monitor.  A spec
-is the container around the monitor, the trigger, and the streams.  The trigger
+streams represent the sensor (or other) data coming into the monitor.  A _spec_
+is the container around the monitor, the trigger, and the streams.  The _trigger_
 is the function to call when the monitored condition occurs.
 
 The idea of infinite samples streams reminded me of Simulink, so I decided to build
@@ -36,7 +36,7 @@ are used to monitor the value of the streams.  The have the form:
 
     observer "description" (variable_name)
 
-Where description can be any string you want.  It appears as the column header
+Where _description_ can be any string you want.  It appears as the column header
 in the output when the spec is interpreted.  I monitor almost all the variables 
 in the real version for plotting.
 
@@ -46,8 +46,8 @@ I defined normal float variables for the coefficients of my PID controller:
       i = 0.2   -- I term coefficient
       d = 0.2   -- D term coefficient
 
-Now I need to define streams for the requested input (y), the commanded output
-(u) and the error (e):
+Now I need to define streams for the requested input _y_, the commanded output
+_u_ and the error _e_:
 
       y :: Stream Double    -- controller input
       u :: Stream Double    -- controller output
@@ -59,7 +59,7 @@ the integral:
       integral :: Stream Double     -- integral of the error
       dedt :: Stream Double         -- derivative of the error
 
-Calculating the streams is the fun part.  The input (y) is the most straightforward.
+Calculating the streams is the fun part.  The input _y_ is the most straightforward.
 All I wanted was an impulse, so I made an infinite stream of ones and added
 some zeros at the beginning:
 
@@ -96,6 +96,7 @@ value of 0.2.  (It should really monitor the absolute value of the error).
 
 For output I just observed the variables I was interested in and interpreted
 my spec the normal Copilot way:
+
     interpret 50 impulseResponse
 
 I put the output into a .txt file and graphed it with a python script (see end

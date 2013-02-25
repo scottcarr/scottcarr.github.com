@@ -114,7 +114,7 @@ For a cooler graph, I used P=0.5, I=0.2, D=0.2:
   
 Now, that looks like something from my Control Systems textbook.
 
-That's all.  A simulation of a PID controller over infinite streams written in Haskell
+This is the end.  A simulation of a PID controller over infinite streams written in Haskell
 is pretty cool if you ask me.
 
 Here's my complete code:

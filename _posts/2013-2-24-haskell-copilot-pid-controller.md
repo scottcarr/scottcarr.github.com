@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-title: A PID controller simulation in a Haskell DSL called Copilot
-summary: Consciousness is just a sampled version of the infinite stream of reality
+title: A PID controller simulation in a Haskell
+summary: Copilot is a Haskell DSL for defining monitors over infinite lists
 ---
 
 I stumbled onto a Haskell DSL called [Copilot](http://leepike.github.com/Copilot/) 

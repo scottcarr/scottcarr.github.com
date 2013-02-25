@@ -65,7 +65,7 @@ some zeros at the beginning:
 
       y = [0.0, 0.0, 0.0, 0,0] ++ 1.0 -- input is an impulse
 
-For u, the initial command is 0.0, but the other command need to be calculated:
+For u, the initial command is 0.0, but the other commands need to be calculated:
 
       u = [0.0] ++ command -- the PID controller output
 

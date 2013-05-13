@@ -1,13 +1,11 @@
 ---
 layout: post
 published: true
-title: On Learning, Memorizing vs. Understanding
-summary: In the age of Google, repeating facts is increasingly irrelevant
+title: Learning, Memorization vs. Understanding
+summary: Don't try to beat an encyclopedia at its own game.
 ---
 
-blah 
-
-In my K-12 days I memorized plenty of things: state capitals, multiplication tables up to 12 times 12, every cursive letter, etc.  Even in my graduate level classes I usually have to memorize something, whether it be a formula, or worse, how many bits long something is.
+In my K-12 days I memorized plenty things\: state capitals, multiplication tables up to 12 times 12, every cursive letter, etc.  Even in my graduate level classes I usually have to memorize something, whether it be a formula, or worse, how many bits long something is.
 
 Memorizing these things helped me score well on my exams, but did it help at all in real life?  Some memorization is no doubt useful.  Multiplying numbers up to 10 comes up frequently in daily life.  However, I've never needed to recall the capital of Vermont.  Knowing a DES key is 56 bits long doesn't make me better at Information Security, but knowing that DES keys are shorter than AES keys (and that's part of the reason DES is insecure) does.  Every instance of memorization would better serve the student if memorization were replaced by contextualization.  Knowning why this particular fact is important to remember, out of vast sea of facts, is as important as the contents of the fact itself.
 

@@ -5,6 +5,7 @@ title: On Learning, Memorizing vs. Understanding
 summary: In the age of Google, repeating facts is increasingly irrelevant
 ---
 
+blah 
 
 In my K-12 days I memorized plenty of things: state capitals, multiplication tables up to 12 times 12, every cursive letter, etc.  Even in my graduate level classes I usually have to memorize something, whether it be a formula, or worse, how many bits long something is.
 

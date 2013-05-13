@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: On Learning: Memorizing vs. Understanding
+title: On Learning, Memorizing vs. Understanding
 summary: In the age of Google, repeating facts is increasingly irrelevant
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: test
 published: false
+title: test
 summary: this is a test post
 ---
 

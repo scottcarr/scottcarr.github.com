@@ -24,11 +24,14 @@ a PID controller simulation.
 
 Below is my spec, simplified for clarity:
 
+{% highlight haskel %}
+
     impulseResponse :: Spec                                                            
     impulseResponse = do                                                               
       observer "y" (y)                                                                 
       trigger "danger!"                                                                
-        (maxErrExceeded) []                                                            
+        (maxErrExceeded) []   
+{% endhighlight %}
 
 The name of the spec is _impulseResponse_, my trigger function to call is
 called _danger!_ and my monitoring condition is _maxErrExceeded_.  Observers

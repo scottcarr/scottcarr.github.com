@@ -1,5 +1,5 @@
 ---
-Layout: post
+layout: post
 published: true
 title: A PID controller simulation in a Haskell
 summary: Copilot is a Haskell DSL for defining monitors over infinite lists

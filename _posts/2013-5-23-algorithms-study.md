@@ -5,7 +5,7 @@ title: How I Studied Algorithms
 summary: From "systems guy" to "systems guy with healthy respect for theory"
 ---
 
-In Spring 2013, I took and passed Purdue CS's required graduate level Algorithms course. It was a lot of work, but I did pretty well, especially considering my background is in the less theoretical field of Computer Engineering.
+In Spring 2013, I took Purdue CS's required graduate level Algorithms course. It was a lot of work, but I did pretty well, especially considering my background is in the less theoretical field of Computer Engineering.
 
 At first when I was trying to understand a new algorithm, I'd code it up in my favorite language (Python).  This works OK for the simpler algorithms like sorting, but for some of the esoteric topics (*ahem* [Fibonacci Heaps](http://en.wikipedia.org/wiki/Fibonacci_heap ) *ahem*) I'd end up spending more time coding than answering homework problems.
 

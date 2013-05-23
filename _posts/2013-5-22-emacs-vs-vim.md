@@ -7,7 +7,7 @@ summary: And the art of text editing
 
 Around the middle of 2011, I started learning Vim.  Right away I noticed productivity gains simply from keeping my fingers on the home row (and off the mouse).  I followed what I imagine is the inevitable path.  At first I installed every plugin I could find, but eventually their allure wore off.  I migrated back to default Vim.  Most plugins offer something that is in default Vim but in a nicer way.  But the plugins go against the main selling point of Vim -- it's installed on every server.  Reconfiguring the plugins became a pain because I ended working on many different machines, so I dropped them.
 
-My honeymoon phase had ended and I decided to try Emacs, mostly for fun (and at the suggestion of [Matt Might](http://matt.might.net/articles/grad-student-resolutions/ ) 
+My honeymoon phase had ended and I decided to try Emacs, mostly for fun (and at the suggestion of [Matt Might.](http://matt.might.net/articles/grad-student-resolutions/ ) 
 
 ## To Mode or not to Mode ##
 

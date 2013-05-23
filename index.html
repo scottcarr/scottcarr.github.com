@@ -17,7 +17,7 @@ title_element: h1
       </div>
 
       <section class="posts">
-      {% for post in site.posts limit:20 %}
+      {% for post in site.posts limit:3 %}
           {% if post.published == true %}
               <article>
               <!--<time datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "<span class='month-day'>%B %e</span> <span class='year'>%Y</span>"}}</time> -->

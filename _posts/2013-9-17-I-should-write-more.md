@@ -5,7 +5,7 @@ title: I should write more
 summary: Honestly, could I be writing less?
 ---
 
-I'm reading [Siddhartha](http://en.wikipedia.org/wiki/Siddhartha).  I loved this snippet of Gotama and Siddhartha's conversation:
+I'm reading <a href="http://en.wikipedia.org/wiki/Siddhartha_(novel)">Siddhartha</a>.  I loved this snippet of Gotama and Siddhartha's conversation:
     
 > ... worthy instruction does not contain; it does not contain the secret of what the Illustrious One himself experienced ... That is what I thought and realized when I heard your teachings.  That is why I am going on my way -- not ot seek another and better doctrine, for I know there is none, but to leave ll doctrines and all teacher and to reach my goal alone -- or die.
 

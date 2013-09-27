@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: Summer reading (belated)
-summary: 
+summary: Yes, I know it's almost October
 ---
 
 My summer reading list in no particular order:

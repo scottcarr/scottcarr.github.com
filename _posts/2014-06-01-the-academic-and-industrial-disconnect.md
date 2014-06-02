@@ -6,7 +6,7 @@ summary: No, I'm not advocating a thesis on Angry Birds (but I'd read it if you 
 ---
 
 There's a huge disconnect between what academic computer science researchers are investigating and what people in industry want.
-In this year's [International Conference on Software Engineering](http://2014.icse-conferences.org/), Andrew Begel and Tom Zimmerman published a paper, *Analyze This! 145 Questions for Data Scientists in Software Engineering.*
+In this year's [International Conference on Software Engineering](http://2014.icse-conferences.org/), [Andrew Begel](http://research.microsoft.com/en-us/um/people/abegel/) and [Tom Zimmerman](http://research.microsoft.com/en-us/people/tzimmer/) published a paper, [*Analyze This! 145 Questions for Data Scientists in Software Engineering.*](http://research.microsoft.com/apps/pubs/default.aspx?id=208800)
 Andrew and Tom are from Microsoft Research.
 The paper reports the results of a survey of Microsoft employees concerning what questions they would like academic researchers to answer.
 The top two most essential questions were:
@@ -26,7 +26,7 @@ Another argument is that academic research pursues knowledge for knowledge's sak
 This is a philosophical stance and I won't be able to completely vanquish it, because it's far too dependent on initial assumptions.
 Can something that is affirmatively useless be good?
 It depends on my definition of useless.
-I love this quote from A Mathematician's Apology by G.H. Hardy
+I love this quote from [A Mathematician's Apology](http://en.wikipedia.org/wiki/A_Mathematician's_Apology) by G.H. Hardy
 
 <quote>a science is said to be useful if its development tends to accentuate the existing inequalities in the distribution of wealth, or more directly promotes the destruction of human life</quote>
 

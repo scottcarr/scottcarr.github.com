@@ -6,7 +6,7 @@ summary: No, I'm not advocating a thesis on Angry Birds (but I'd read it if you 
 ---
 
 There's a huge disconnect between what academic computer science researchers are investigating and what people in industry want.
-In this year's International Conference on Software Engineering, Andrew Begel and Tom Zimmerman published a paper, Analyze This! 145 Questions for Data Scientists in Software Engineering.
+In this year's [International Conference on Software Engineering](http://2014.icse-conferences.org/), Andrew Begel and Tom Zimmerman published a paper, *Analyze This! 145 Questions for Data Scientists in Software Engineering.*
 Andrew and Tom are from Microsoft Research.
 The paper reports the results of a survey of Microsoft employees concerning what questions they would like academic researchers to answer.
 The top two most essential questions were:

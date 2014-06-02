@@ -28,7 +28,7 @@ Can something that is affirmatively useless be good?
 It depends on my definition of useless.
 I love this quote from [A Mathematician's Apology](http://en.wikipedia.org/wiki/A_Mathematician's_Apology) by G.H. Hardy
 
-<quote>a science is said to be useful if its development tends to accentuate the existing inequalities in the distribution of wealth, or more directly promotes the destruction of human life</quote>
+>a science is said to be useful if its development tends to accentuate the existing inequalities in the distribution of wealth, or more directly promotes the destruction of human life
 
 He was being facetious, and computer science is typically useful on both counts.
 Another great analogy pertaining to usefulness from the same book is chess problems.

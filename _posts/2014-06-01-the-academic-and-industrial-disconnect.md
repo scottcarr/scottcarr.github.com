@@ -10,8 +10,10 @@ In this year's [International Conference on Software Engineering](http://2014.ic
 Andrew and Tom are from Microsoft Research.
 The paper reports the results of a survey of Microsoft employees concerning what questions they would like academic researchers to answer.
 The top two most essential questions were:
+
 1.  How do users typically use my application?
 2.  What parts of a software product are most used and/or loved by customers?
+
 I can't recall any paper that remotely touched on those.
 
 I do not under estimate the academic's ability to turn up their nose at my argument.  

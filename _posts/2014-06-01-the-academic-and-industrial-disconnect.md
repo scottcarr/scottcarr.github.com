@@ -9,18 +9,21 @@ There's a huge disconnect between what academic computer science researchers are
 In this year's [International Conference on Software Engineering](http://2014.icse-conferences.org/), [Andrew Begel](http://research.microsoft.com/en-us/um/people/abegel/) and [Tom Zimmerman](http://research.microsoft.com/en-us/people/tzimmer/) published a paper, [*Analyze This! 145 Questions for Data Scientists in Software Engineering.*](http://research.microsoft.com/apps/pubs/default.aspx?id=208800)
 Andrew and Tom are from Microsoft Research.
 The paper reports the results of a survey of Microsoft employees concerning what questions they would like academic researchers to answer.
-The top two most essential questions were:
+The top three most essential questions were:
 
 1.  How do users typically use my application?
 2.  What parts of a software product are most used and/or loved by customers?
+3.  How effective are the quality gates we run at checkin?
 
-I can't recall any paper that remotely touched on those.
+These are not exactly in the academic research wheelhouse.
+Should every computer scientist drop what they're doing and focus on these questions?
+Of course not, but industrial impact lends crediblity to a research project, and lack of impact detracts credibility. 
 
 I do not under estimate the academic's ability to turn up their nose at my argument.  
 To the stereotypical academic, the disconnect is not only not a problem, but a desired feature.
 
 They might believe the disconnect is desired because unbridled from the concerns of the real world, academics elucidate the grander ideas.
-"If you Henry Ford had asked people what they wanted, they'd have asked for a faster horse," they might say, and hence not have invented the automobile.
+"If Henry Ford had asked people what they wanted, they'd have asked for a faster horse," they might say, and hence not have invented the automobile.
 Well, if Henry Ford had taken that request 100% literally, sure.
 But, with the slightest abstraction "people want a faster horse" becomes "people want to travel faster" and there's the car.
 

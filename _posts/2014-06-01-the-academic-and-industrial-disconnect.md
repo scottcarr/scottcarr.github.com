@@ -48,7 +48,7 @@ We've got plenty of good will left over from inventing the Internet and World Wi
 
 I'm advocating a gentle nudge towards applicability, not an extreme shift in priorities.
 Being too industry focused is a problem too.
-One of the great things about academia is that it one of a vanishingly few places in our society isn't overrun by a unquenchable lust for profit.
+One of the great things about academia is it's one of a vanishingly few places in our society isn't overrun by a unquenchable lust for profit.
 The biggest pet peeve of mine is research about a specific industry technology (see the deluge of Android papers), but ignores that technology was designed under constraints and assumptions.
 The worst type of paper is, "We took this product that was optimized for X and re-optimized it for Y. Surprise! The benchmarks show improvement on Y. Turing award please."
 The problem is they never show that Y is the better thing to optimize for.

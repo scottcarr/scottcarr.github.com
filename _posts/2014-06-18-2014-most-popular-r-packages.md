@@ -96,6 +96,16 @@ plotResults <- function() {
 
 ![A word cloud](https://raw.githubusercontent.com/scottcarr/scottcarr.github.com/master/images/wordcloud.jpg)
 
+This is a legitimate use for a word cloud; I contend.
+DBI stands for "Database Interface."
+Rcpp is a package for call C++ from R.
+It's not surprising the the most popular packages are for the things people typically do in R, namely look at data and plot it.
+I'm a little surprised the Rcpp is very popular.
+I thought most R users just used premade packages.
+Maybe Rcpp is requried by packages they use and they're not really writting their own.
+
+Now for a more sensible plot, a bar plot.
+
 {% highlight R%}
 hbarPlot <- function() {
     jpeg("hbar.jpg")
@@ -109,4 +119,5 @@ hbarPlot <- function() {
 
 ![A bar plot](https://raw.githubusercontent.com/scottcarr/scottcarr.github.com/master/images/hbar.jpg)
 
-
+For this plot I can see that sample size actually fairly large.
+From the begining of June to June 17th, the DBI package was downloaded over 50,000 times.

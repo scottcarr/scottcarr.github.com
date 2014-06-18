@@ -96,5 +96,17 @@ plotResults <- function() {
 
 ![A word cloud](https://raw.githubusercontent.com/scottcarr/scottcarr.github.com/master/images/wordcloud.jpg)
 
+{% highlight R%}
+hbarPlot <- function() {
+    jpeg("hbar.jpg")
+    d <- read.csv("countsSorted.csv")
+    par(las=2) # make label text perpendicular to axis
+    range <- 25:1
+    barplot(d[range, 3], horiz=TRUE, names.arg=d[range, 2], cex.names=0.7)
+    dev.off()
+}
+{% endhighlight %}
 
 ![A bar plot](https://raw.githubusercontent.com/scottcarr/scottcarr.github.com/master/images/hbar.jpg)
+
+

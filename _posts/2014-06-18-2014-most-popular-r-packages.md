@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: The most popular R packages (according to rstudio.com)
+title: The most popular R packages, according to RStudio
 summary: A legimate use of a word cloud
 ---
 

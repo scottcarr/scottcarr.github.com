@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: The most popular R packages, according to RStudio
-summary: A legimate use of a word cloud
+summary: In which I make legimate use of a word cloud
 ---
 
 I've been thinking about doing some empirical [R](http://www.r-project.org/) research lately.

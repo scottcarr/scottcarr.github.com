@@ -56,9 +56,11 @@ I didn't want to re-download the logs each time, I've been working on my local l
             }
         }
     }
+{% endhighlight %}
 
 Now that I've downloaded the files, I just open them and merge the tables.
 
+{% highlight R%}
     countPackages <- function() {
         setwd(LOGDIR)
         logs <- dir()
@@ -79,7 +81,7 @@ Now that I've downloaded the files, I just open them and merge the tables.
         n <- intersect(names(a), names(b))
         c(a[!(names(a) %in% n)], b[!(names(b) %in% n)], a[n] + b[n])
     }
-
+{% endhighlight %}
 On to the good part.  I made two plots to visualize the most popular packages.
 
 plotResults <- function() {

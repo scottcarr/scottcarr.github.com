@@ -91,6 +91,6 @@ plotResults <- function() {
 }
 ```
 
-![A word cloud]({{site.url}}/images/wordcloud.jpg)
+![A word cloud](/images/wordcloud.jpg)
 
-![A bar plot]({{site.url}}/images/hbar.jpg)
+![A bar plot](/images/hbar.jpg)

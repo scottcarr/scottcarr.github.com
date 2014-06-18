@@ -89,7 +89,7 @@ plotResults <- function() {
     wordcloud(d[["X.1"]], d[["x"]], max.words=100)
     dev.off()
 }
-{% end highlight R%}
+{% endhighlight %}
 
 ![A word cloud](/images/wordcloud.jpg)
 

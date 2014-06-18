@@ -89,6 +89,6 @@ plotResults <- function() {
     dev.off()
 }
 
-![A word cloud]({{site.url}/images/wordcloud.jpg)
+![A word cloud]({{site.url}}/images/wordcloud.jpg)
 
-![A bar plot]({{site.url}/images/hbar.jpg)
+![A bar plot]({{site.url}}/images/hbar.jpg)

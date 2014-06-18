@@ -21,6 +21,7 @@ I wrote an R script to download the logs and make some nice plots.
 First, I wrote two functions to download the logs.
 I didn't want to re-download the logs each time, I've been working on my local library's sketchy WiFi lately, so I take the set difference of what I have in my log directory and what RStudio has on its server.
 
+{% highlight R%}
     getMissingLogs <- function() {
         #see http://cran-logs.rstudio.com/
         setwd(LOGDIR)
@@ -81,7 +82,6 @@ Now that I've downloaded the files, I just open them and merge the tables.
 
 On to the good part.  I made two plots to visualize the most popular packages.
 
-{% highlight R%}
 plotResults <- function() {
     jpeg("wordcloud.jpg")
     d <- read.csv("countsSorted.csv")

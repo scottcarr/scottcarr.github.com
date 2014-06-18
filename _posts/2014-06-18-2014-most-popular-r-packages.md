@@ -82,8 +82,10 @@ Now that I've downloaded the files, I just open them and merge the tables.
         c(a[!(names(a) %in% n)], b[!(names(b) %in% n)], a[n] + b[n])
     }
 {% endhighlight %}
+
 On to the good part.  I made two plots to visualize the most popular packages.
 
+{% highlight R%}
 plotResults <- function() {
     jpeg("wordcloud.jpg")
     d <- read.csv("countsSorted.csv")

@@ -85,12 +85,12 @@ On to the good part.  I made two plots to visualize the most popular packages.
 plotResults <- function() {
     jpeg("wordcloud.jpg")
     d <- read.csv("countsSorted.csv")
-    #d <- d[order(d[,2]),]
     wordcloud(d[["X.1"]], d[["x"]], max.words=100)
     dev.off()
 }
 {% endhighlight %}
 
-![A word cloud](/images/wordcloud.jpg)
+![A word cloud](https://raw.githubusercontent.com/scottcarr/scottcarr.github.com/master/images/wordcloud.jpg)
 
-![A bar plot](/images/hbar.jpg)
+
+![A bar plot](https://raw.githubusercontent.com/scottcarr/scottcarr.github.com/master/images/hbar.jpg)

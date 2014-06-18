@@ -81,7 +81,7 @@ Now that I've downloaded the files, I just open them and merge the tables.
 
 On to the good part.  I made two plots to visualize the most popular packages.
 
-``` r
+``` R
 plotResults <- function() {
     jpeg("wordcloud.jpg")
     d <- read.csv("countsSorted.csv")

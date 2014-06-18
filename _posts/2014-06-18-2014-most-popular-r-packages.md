@@ -121,3 +121,5 @@ hbarPlot <- function() {
 
 For this plot I can see that sample size actually fairly large.
 From the begining of June to June 17th, the DBI package was downloaded over 50,000 times.
+
+Tip 'o the hat to this [blog post](http://www.r-statistics.com/2013/06/top-100-r-packages-for-2013-jan-may/) for pointing me to the RStudio logs.

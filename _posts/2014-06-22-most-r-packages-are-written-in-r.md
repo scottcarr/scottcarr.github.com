@@ -27,8 +27,8 @@ Some of these are wrappers around C programs such as RCurl, but there could be s
 A deeper dive is necessary to deterimine why an individual package uses C.
 
 How did I get this data?  
-In my previous [post](2014-most-popular-r-packages), I mined the [RStudio](rstudio.com) logs to find the most popular packages.
-Then I downloaded the packages from [CRAN](cran.r-project.org), and ran [cloc](http://cloc.sourceforge.net/) on them.
+In my previous [post](2014-most-popular-r-packages), I mined the [RStudio](http://rstudio.com) logs to find the most popular packages.
+Then I downloaded the packages from [CRAN](http://cran.r-project.org), and ran [cloc](http://cloc.sourceforge.net/) on them.
 Note for reproducibility: I had to get the latest-and-greatest cloc from SVN for R support.
 Luckily cloc has a csv output option, so getting the data into R is as simple as:
 
@@ -36,7 +36,8 @@ Luckily cloc has a csv output option, so getting the data into R is as simple as
 cloc <- function(file) {
     nHeader <- 4
     nFooter <- 3
-    output <- system(paste0("cloc --force-lang=R,r --csv ", file), intern=TRUE)
+    output <- system(paste0("cloc --force-lang=R,r --csv ", file), 
+                        intern=TRUE)
     output <- output[-(1:nHeader)]
     con <- textConnection(output)
     d <- read.csv(con)

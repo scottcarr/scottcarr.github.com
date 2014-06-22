@@ -9,7 +9,7 @@ I've been thinking about doing some empirical [R](http://www.r-project.org/) res
 The nice thing about doing research related to R, is it's a language people other than computer scientists actually use.
 In that vein, I decided to try to determine what R packages are the most popular.
 This isn't as straightforward as it might seem.
-The main "official" package archive is [CRAN](cran.r-project.org), but there's also [Bioconductor](http://www.bioconductor.org/), and probably some others I don't know about.
+The main "official" package archive is [CRAN](http://cran.r-project.org), but there's also [Bioconductor](http://www.bioconductor.org/), and probably some others I don't know about.
 CRAN has multiple mirriros so there is no one place where the download statistics are kept.
 The largest compiled statistics I found were at [cran-logs.rstudio.com](http://cran-logs.rstudio.com/).
 

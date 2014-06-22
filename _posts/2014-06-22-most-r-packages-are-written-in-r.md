@@ -6,7 +6,7 @@ summary: I'm looking only at non-default packages.  Might they be implemented in
 ---
 
 I've been starting to think about some R related research.
-Building on my previous [post](2014-most-popular-r-packages), wherein I data mine the [RStudio](rstudio.com) logs to find the most popular R packages, I've dug a little deeper in to the package contents.
+Building on my previous [post](2014-most-popular-r-packages), wherein I data mine the [RStudio](www.rstudio.com) logs to find the most popular R packages, I've dug a little deeper in to the package contents.
 
 One question I have is, "How much of R is written C/C++ or Fortran?"
 I expected the performance critical parts, especially linear algebra, to be written in a "faster" language.

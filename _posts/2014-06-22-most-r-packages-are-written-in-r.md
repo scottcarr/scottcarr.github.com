@@ -20,14 +20,13 @@ This post only looks at a piece of the bigger R ecosystem, but I'll get to the r
 I should also note these are the most popular non-default packages.
 For the default packages, which are included with the R installer, I don't know of a way of measuring their popularity.
 
-Looking at the plot, most packages consist mainly or R code.
+Looking at the plot, most packages consist mainly of R code.
 Notable expections are Rcpp and rJava, which have a lot of C++ and Java code respectively.
 There's also a smattering of C across some packages.
 Some of these are wrappers around C programs such as RCurl, but there could be some C for performance sake.
 A deeper dive is necessary to deterimine why an individual package uses C.
 
-How did I get this data?  
-In my previous [post](2014-most-popular-r-packages), I mined the [RStudio](http://rstudio.com) logs to find the most popular packages.
+How did I get this data?In my previous [post](2014-most-popular-r-packages), I mined the [RStudio](http://rstudio.com) logs to find the most popular packages.
 Then I downloaded the packages from [CRAN](http://cran.r-project.org), and ran [cloc](http://cloc.sourceforge.net/) on them.
 Note for reproducibility: I had to get the latest-and-greatest cloc from SVN for R support.
 Luckily cloc has a csv output option, so getting the data into R is as simple as:

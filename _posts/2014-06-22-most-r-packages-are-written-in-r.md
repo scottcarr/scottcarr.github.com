@@ -26,7 +26,8 @@ There's also a smattering of C across some packages.
 Some of these are wrappers around C programs such as RCurl, but there could be some C for performance sake.
 A deeper dive is necessary to deterimine why an individual package uses C.
 
-How did I get this data?In my previous [post](2014-most-popular-r-packages), I mined the [RStudio](http://rstudio.com) logs to find the most popular packages.
+How did I get this data?
+In my previous [post](2014-most-popular-r-packages), I mined the [RStudio](http://rstudio.com) logs to find the most popular packages.
 Then I downloaded the packages from [CRAN](http://cran.r-project.org), and ran [cloc](http://cloc.sourceforge.net/) on them.
 Note for reproducibility: I had to get the latest-and-greatest cloc from SVN for R support.
 Luckily cloc has a csv output option, so getting the data into R is as simple as:

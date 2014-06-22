@@ -36,8 +36,8 @@ Luckily cloc has a csv output option, so getting the data into R is as simple as
 cloc <- function(file) {
     nHeader <- 4
     nFooter <- 3
-    output <- system(paste0("cloc --force-lang=R,r --csv ", file), 
-                        intern=TRUE)
+    cmd <- paste0("cloc --force-lang=R,r --csv ", file)
+    output <- system(cmd, intern=TRUE)
     output <- output[-(1:nHeader)]
     con <- textConnection(output)
     d <- read.csv(con)

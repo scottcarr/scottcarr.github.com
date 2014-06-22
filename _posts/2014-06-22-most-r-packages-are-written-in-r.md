@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: The most popular R packages are, mostly, written in R.
+title: The most popular R packages are, mostly, written in R
 summary: I'm looking only at non-default packages.  Might they be implemented in C for performance?
 ---
 

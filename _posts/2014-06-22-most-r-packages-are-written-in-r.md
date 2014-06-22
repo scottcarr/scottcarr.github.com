@@ -41,7 +41,7 @@ cloc <- function(file) {
     output <- output[-(1:nHeader)]
     con <- textConnection(output)
     d <- read.csv(con)
-    d <- d[-length(d)] # the lost column is some weird string
+    d <- d[-length(d)] # the last column is some weird string
     languages <- d[["language"]]
     df <- data.frame(t(as.numeric(d[["code"]])), basename(file))
     colnames(df) <- c(as.character(languages), "package")

@@ -2,7 +2,8 @@
 layout: post
 published: true
 title: Data Confidentiality and Integrity
-summary:
+summary: My new project for preventing information leaks and data corruption in
+C/C++ programs
 ---
 
 The new project I am working on is called Data Confidentiality and Integrity

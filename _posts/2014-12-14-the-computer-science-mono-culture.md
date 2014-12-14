@@ -36,15 +36,15 @@ for-loop was.  Luckily (or unluckily) I didn't get into a top-whatever school
 and my classmates were generally even greener than me.  I've come to realize
 through informal conversations and learning about our Bridge Program that
 students are de facto considered to have programming experience in their very
-first 100-level CS class here at Purdue.  My impression first year CS here is a
-trial-by-fire.  I get a knot in my stomach when I try to image how 18 year old
+first 100-level CS class here at Purdue.  My impression is first year CS here is a
+trial-by-fire, and a knot forms in my stomach when I try to image how 18 year old
 me would have handled it.
 
 There's nothing wrong with tough classes and I take pride in Purdue's
 reputation, but we should ask ourselves if this situation has occurred by design
-or chance. The idea that you need to have experience in your major before
+or chance. The idea that students need to have experience in your major before
 classes even begin is, as far as I know, unique to CS.  We don't expect freshman
-dentistry students to have experience drilling cavities.  There exceptions in
+dentistry students to have drilled cavities.  There exceptions in
 that departments are allowed to assume applicants have the background knowledge
 provided by the core high school curriculum.  For instance, math departments
 might reasonably expect their applications to have taken Pre-Calculus.
@@ -58,12 +58,13 @@ parents are not programmers, so they never thought about it.  People who are
 teenagers and act like teenagers and don't think about their career until
 they're forced to pick a major.  
 
-We should not make classes easier, or let people with lesser grades graduate,
-but set proper expectations.  In the very first CS course, when a student whose
-never programmed before doesn't do as well as a student whose dad taught him
+We should not make classes easier, or let students with lesser grades graduate,
+but set proper expectations.  In the very first CS course, when a student who
+has never seen Java before doesn't do as well as a student whose dad taught him
 Java when he was 12, it does not indicate anything about either student's
 potential.  It is the instructor's, TA's, and department's responsibility to
-make that clear.  Programming is a learned skill and it's possible to catch up. 
+make that clear to the first student.  Programming is a learned skill and it's
+possible to catch up. 
 
 ## CS undergrad as vocational training
 

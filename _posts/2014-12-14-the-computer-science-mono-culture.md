@@ -5,28 +5,28 @@ title: The Computer Science Monoculture
 summary: 
 ---
 
-Way too many people have a picture in their mind of what a computer science
-student "should" be, including colleagues whose opinions I greatly respect.  The
-culture around computer science is the result of naked capitalism.  It's a
-lucrative field both academically and industrially.  A high school student who
-likes math and wants to make a good living could naturally choose CS.  This has
-led to increasingly many students applying to CS programs, and CS programs
-naturally selected the most likely to succeed from their growing applicant
-pools.  These conditions have been present long enough to form a self sustaining
-cycle where CS professors expect their students to uphold the high standard
-expected of them when they were undergrads.
+I think many people's mental picture of "a good computer science student," is
+far too narrow.  The mental picture they have is not malicious, but the natural
+result of our current environment.  The culture around computer science is the
+result of market forces.  It's a lucrative field both academically and
+industrially.  A high school student who likes math and wants to make a good
+living could naturally choose CS.  This has led to increasingly many students
+applying to CS programs, and CS programs naturally selecting the most likely to
+succeed from their growing applicant pools.  These conditions have been present
+long enough to form a self sustaining cycle, where CS professors expect their
+students to uphold the high standard expected of them when they were undergrads.
 
-Many people believe that's exactly how it should be, and I'm inclined to agree
-except for a big caveat that is the subject of this essay.  Industry has no
-doubt benefited from an endless stream of pre-screened and pre-trained
-programmers.  Undeniably the overall quality of a field is bolstered by many
-smart people's interest in it.  My issue is the self-reinforcing picture of what
-a computer science student looks like excludes many smart, valuable people.
-People in every field naturally hire/accept/like people who look, think, and act
-like them, but in CS that way of thinking is particularly prevalent.  It is the
-moral obligation of every person to fight this instinct.  This obligation is
-especially strong for computer scientists since it has led to harmful biases in
-our culture.
+Many people believe that's exactly how it should be, and I'm inclined to agree,
+except for a big caveat that is the subject of this essay.  Everyone benefits
+from highly capable students entering the field in droves.  Industry gladly
+accepts an endless stream of pre-screened and pre-trained programmers.
+Academia is similarly blostered by hordes for eager and able graduate students.
+My issue is the self-reinforcing stereotypes or ways of thinking that 
+exclude smart, valuable people that don't fit the mold.  People in every field
+naturally hire/accept/like people who look, think, and act like them, but in CS
+that way of thinking is particularly prevalent.  It is the moral obligation of
+every person to fight this instinct, but the obligation is especially strong for
+computer scientists since it has led to harmful biases in our culture.
 
 ## The boy genius programmer
 

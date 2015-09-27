@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: TrendMicro CTF Asia Pacific & Japan 2015 Programming 500 Writeup
 summary: You gotta know when to fold 'em.  Know when to hold 'em.
 ---

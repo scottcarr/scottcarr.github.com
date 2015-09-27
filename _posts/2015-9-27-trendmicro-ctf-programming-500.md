@@ -91,7 +91,7 @@ def simulate_dealer():
 
 Now I don't want to re-run this simulate everytime, so I use numpy to save the data.  Note that I keep the results in an array where the *i*-th index holds the probability of the dealer getting the score *i*.
 
-```python
+{% highlight python %}
 def save_numpy_file(sim_res):
     dealer_probs = np.zeros((22,1), dtype=float)
     for score in POSSIBLE_DEALER_RESULTS:
@@ -102,23 +102,23 @@ def save_numpy_file(sim_res):
         else:
             dealer_probs[0] = float(tmp) / float(tot)
     np.save(fname, dealer_probs)
-```
+{% endhighlight %}
 
 On to simulating playing my hand.  The code to simulate my play is essentially the same as the dealer except I use a different decision procedure.
 
 My criteria to hit or stand is a boolean variable calculated by:
 
-```python
+{% highlight python %}
 while (stand_win_total <= 11 and stand_win_prob < .5) \
             or (stand_win_total < 17 and has_soft_ace(stand_win_hand)):
-```
+{% endhighlight %}
 
 Here *stand_win_total* is my current score, *stand_win_prob* is calculated by summing the probability that the dealer scores less than my current total or busts and *has_soft_ace* is a function that returns true if in my current hand I'm using an Ace as 11 (a soft ace).  I can never bust if I hit with a soft ace, so it's better strategy to hit if I don't have a good hand.  Note that this isn't exactly the "by-the-book" procedure, but I'm pretty use it effective is the same.  That is:
 
-```python
+{% highlight python %}
 while stand_win_total <= 11) \
         or (stand_win_total < 17 and has_soft_ace(stand_win_hand)):
-```
+{% endhighlight %}
     
 Now I can play simulate my "real" strategy by using this "by-the-book" strategy and my dealer score distribution I calculated earlier.  Then I can do Monte Carlo.  I just simulate tons and tons of hands and eventually the probability of winning that I'm calculating based on my simulation converges to the real probablity.
 

@@ -38,7 +38,7 @@ I made two key assumptions:
 
 The function *get_dealer_decision* applies the dealer's decision procedure given his current hand.
 
-```
+{% highlight python %}
 def get_dealer_decision(dealer_hand):
     # return the final score if the dealer stops
     # or -2 if he should hit
@@ -51,7 +51,7 @@ def get_dealer_decision(dealer_hand):
     if best >= 17:
         return best
     return HIT
-```
+{% highlight python %}
 
 The function *simulate_dealer_once* sets up the deck and then calls *simulate_dealer_hand* which is where the hand is actually played.
 

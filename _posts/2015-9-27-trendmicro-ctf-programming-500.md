@@ -38,7 +38,7 @@ I made two key assumptions:
 
 The function *get_dealer_decision* applies the dealer's decision procedure given his current hand.
 
-```python
+```
 def get_dealer_decision(dealer_hand):
     # return the final score if the dealer stops
     # or -2 if he should hit

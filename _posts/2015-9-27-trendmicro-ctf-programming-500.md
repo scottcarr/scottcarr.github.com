@@ -130,5 +130,5 @@ The probability of winning if I stand is 0.3770.
 
 This make intuitive sense because I have a soft Ace and a low total (13).  Good strategy is to hit in an attempt to improve my score since I cannot bust.
 
-
+The complete code is [here.](https://github.com/scottcarr/ctf/blob/master/TrendMicroCtfAsiaPacific2015/blackjack.py) 
  

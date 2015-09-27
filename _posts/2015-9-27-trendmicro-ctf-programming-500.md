@@ -25,14 +25,16 @@ I took a statistics class last summer and I learned many formulas and techniques
 
 The problem is that for a given hand my decision procedure depends on already knowing two probabilities: 1) the probability of the dealer beating me if I stop now 2) the probability of winning if I continue.  But 2) is the very probability I'm trying to approximate using Monte Carlo.  I won't know the true probability until I've run many simulations so I can't use this decision procedure exactly.  I need to approximate it.
 
-The probability of winning if I stand at any given point is relatively easy to calculate using Monte Carlo.  I need to simulate the dealer playing many times, but first I will show how to run a single iteration.  Further, each individual simulation technically has different probabilities of drawing the different cards.  If I draw a 3 as my first card that changes all the subsequent probabilitys.  Now I'm having to run Monte Carlo simulations inside my Monte Carlo simulations.  This would take to long.
+The probability of winning if I stand at any given point is relatively easy to calculate using Monte Carlo.  I need to simulate the dealer playing many times, but first I will show how to run a single iteration.  Further, technially the dealer simulation should depend on what cards I drew because that changes the probabilities of his card draws.  If I draw a 3 as my first card, that changes all the subsequent card draw probabilites.  To truly model the dealer outcomes I would need to have a different probability distribution for every on of my possible hands.  Now I'm having to run Monte Carlo simulations inside my Monte Carlo simulations.  This would take too long.
 
 I made two key assumptions:
 
 1) I could approximate the probability of the dealer beating me when I have a particular hand by calculating the probability of the dealer getting each possible score (17, 18, 19, 20, 21, or bust) given that I stand with my starting hand.  This gives me one static dealer score probability distribution that I only ever need to calculate once, but will be slightly off because it doesn't take into account the cards I might have drawn.
-2) I guessed that my optimal strategy would be very close to the "by-the-book" strategy used by real world blackjack players.  You can find action tables for blackjack online that you can use to look up what you should do given your current hand and the dealer's face up card.
+2) I guessed that my optimal strategy would be very close to the "by-the-book" strategy used by real-world blackjack players.  You can find action tables for blackjack online that you can use to look up what you should do given your current hand and the dealer's face up card.
 
 ![an example blackjack strategy card](http://www.cardcountingtrainer.com/wp-content/uploads/2013/01/FinalBBSchart.png)
+
+#The Code
 
 The function *get_dealer_decision* applies the dealer's decision procedure given his current hand:
 
@@ -127,5 +129,7 @@ The probability of winning if I continue is 0.5094.
 The probability of winning if I stand is 0.3770.
 
 This make intuitive sense because I have a soft Ace and a low total (13).  Good strategy is to hit in an attempt to improve my score since I cannot bust.
+
+The complete code is [here.](https://github.com/scottcarr/ctf/blob/master/TrendMicroCtfAsiaPacific2015/blackjack.py)
 
  

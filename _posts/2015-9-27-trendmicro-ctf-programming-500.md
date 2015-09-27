@@ -36,7 +36,7 @@ I made two key assumptions:
 
 #The Code
 
-The function *get_dealer_decision* applies the dealer's decision procedure given his current hand:
+The function *get_dealer_decision* applies the dealer's decision procedure given his current hand.
 
 ```python
 def get_dealer_decision(dealer_hand):

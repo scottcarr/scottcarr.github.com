@@ -9,7 +9,7 @@ summary: You gotta know when to fold 'em.  Know when to hold 'em.
 
 I'm playing heads up blackjack.  I'm dealt Ace-2 and the dealer has 3 showing.  What's the probably of winning if: 1) I stand or 2) I kept playing.
 
-# The Details
+#The Details
 
 I'm not limited to just hitting once.  In fact, after each card I apply the decision criteria: if my probably of winning when I continue is greater than the probability of winning if I stand, I continue, otherwise I stand.  The probablity of winning at state N depends on the probability of winning at N+1, N+2, N+3, ... until I bust or stand.  The probability of winning if I continue is recursive in some sense.
 
@@ -17,7 +17,7 @@ While my strategy is dynamic, the dealer's strategy is static.  He stands anytim
 
 We play with two regular decks giving us 104 cards in total.
 
-# The Solution
+#The Solution
 
 ![Monte Carlo All the Things!](http://i.imgur.com/waepRcZ.jpg)
 

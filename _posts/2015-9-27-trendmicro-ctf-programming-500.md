@@ -51,7 +51,7 @@ def get_dealer_decision(dealer_hand):
     if best >= 17:
         return best
     return HIT
-{% highlight python %}
+{% endhighlight %}
 
 The function *simulate_dealer_once* sets up the deck and then calls *simulate_dealer_hand* which is where the hand is actually played.
 

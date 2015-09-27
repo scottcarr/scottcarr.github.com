@@ -55,7 +55,7 @@ def get_dealer_decision(dealer_hand):
 
 The function *simulate_dealer_once* sets up the deck and then calls *simulate_dealer_hand* which is where the hand is actually played.
 
-```python
+{% highlight python %}
 def simulate_dealer_once():
     deck = Deck()
     deck.remove(dealer_face_up_card)
@@ -64,10 +64,11 @@ def simulate_dealer_once():
     score, hand = simulate_dealer_hand(deck)
     return score # decision is his final score or -1 for busted
 ```
+{% endhighlight %}
 
 To play the hand the dealer evaluates his decision procedure then acts accordingly.
 
-```python
+{% highlight python %}
 def simulate_dealer_hand(deck):
     dealer_hand = [dealer_face_up_card]
     while True: 
@@ -76,17 +77,17 @@ def simulate_dealer_hand(deck):
         if decision != HIT:
             break
     return decision, dealer_hand
-```
+{% endhighlight %}
 
 So *simulate_dealer_once* simulates the dealer playing his hand to completion given the starting deck. Now all I have to do is simulate the dealer playing over and over.
 
-```python
+{% highlight python %}
 def simulate_dealer():
     dealer_sim_results = [0]*N_DEALER_SIMS
     for i in range(N_DEALER_SIMS):
         dealer_sim_results[i] = simulate_dealer_once()
     return dealer_sim_results
-```
+{% endhighlight %}
 
 Now I don't want to re-run this simulate everytime, so I use numpy to save the data.  Note that I keep the results in an array where the *i*-th index holds the probability of the dealer getting the score *i*.
 

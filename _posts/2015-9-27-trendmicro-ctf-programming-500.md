@@ -23,7 +23,7 @@ We play with two regular decks giving us 104 cards in total.
 
 I took a statistics class last summer and I learned many formulas and techniques, but the biggest lesson I learned is that if I can simulate something I can use [Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method) to approximate the distribution.  Monte Carlo is amazing for programmers because we're generally good at programming but not so good at manipulating probability equations.
 
-The problem is that for a given hand my decision procedure depends on already knowing two probabilities: 1) the probability of the dealer betting me if I stop now 2) the probability of winning if I continue.  But 2) is the very probability I'm trying to approximate using Monte Carlo.  I can't 
+The problem is that for a given hand my decision procedure depends on already knowing two probabilities: 1) the probability of the dealer beating me if I stop now 2) the probability of winning if I continue.  But 2) is the very probability I'm trying to approximate using Monte Carlo.  I can't 
 
 The probability of winning if I stand at any given point is relatively easy to calculate using Monte Carlo.  I need to simulate the dealer playing many times, but first I will show how to run a single iteration.  Further, each individual simulation technically has different probabilities of drawing the different cards.  If I draw a 3 as my first card that changes all the subsequent probabilitys.  Now I'm having to run Monte Carlo simulations inside my Monte Carlo simulations.  This would take to long.
 

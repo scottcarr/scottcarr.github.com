@@ -63,7 +63,6 @@ def simulate_dealer_once():
     deck.remove('2')
     score, hand = simulate_dealer_hand(deck)
     return score # decision is his final score or -1 for busted
-```
 {% endhighlight %}
 
 To play the hand the dealer evaluates his decision procedure then acts accordingly.

@@ -15,6 +15,7 @@ give a quick start guide for grad students new to LLVM and some tips
 for more experienced LLVM users.  
 
 My secret agenda was to get new tips from the audience.  If you have any
-suggestions for how to improve or extend my talk, please contact me.  Email:
+suggestions for how to improve or extend my talk, please contact me.  I hope to
+continuously update the talk in the future.  Email:
 [carr27@purdue.edu](mailto:carr27@purdue.edu).  Twitter:
 [@ScottCarr](https://twitter.com/scottcarr).

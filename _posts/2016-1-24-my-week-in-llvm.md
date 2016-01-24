@@ -156,7 +156,9 @@ For the other parameters, I just left the default value.
 
 #Conclusion
 
-That's how I clone functions in LLVM.  As always, tips and corrections are welcome.  You can contact me on Twitter.
+That's how I clone functions in LLVM.  The full code will be open sourced as soon as my paper is accepted :).
+
+As always, tips and corrections are welcome.  You can contact me on Twitter.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">My new blog post on how I solved a problem in LLVM this week: <a href="https://t.co/nt1a3T4DYQ">https://t.co/nt1a3T4DYQ</a></p>&mdash; Scott Carr (@ScottCarr) <a href="https://twitter.com/ScottCarr/status/691354475815112704">January 24, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

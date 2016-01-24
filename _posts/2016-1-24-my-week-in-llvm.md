@@ -55,7 +55,7 @@ this module?  I Googled and grepped the LLVM source, but couldn't find any
 function that cloned a function and took a *Module* reference as a parameter.
 Then I found
 [CloneFunctionInto](http://llvm.org/docs/doxygen/html/Cloning_8h_source.html#l00142)
-which takes the function do copy-paste the original function's code into.
+which takes a new function to copy-paste the original function's code into.
 
 {% highlight cpp%}
 /// Clone OldFunc into NewFunc, transforming the old arguments into references

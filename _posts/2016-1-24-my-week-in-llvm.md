@@ -77,7 +77,7 @@ void CloneFunctionInto(Function *NewFunc, const Function *OldFunc,
 {% endhighlight%}
 
 Using this, I can clone one function into another, so I just need to make sure
-*newFunc* is a function in the current module.
+*NewFunc* is a function in the current module.
 
 #Step 2: Grep for It
 
@@ -85,10 +85,14 @@ At this point I'm pretty sure I want to use
 [CloneFunctionInto](http://llvm.org/docs/doxygen/html/CloneFunction_8cpp_source.html#l00078),
 but I don't know what a *ValueToValueMapTy* is.  For *CloneCodeInfo* it takes a
 default value of *nullptr*, so I'm just going with that.  To figure out how to
-use any LLVM type, my go to tactic is to find somewhere in the LLVM that uses
-that type and adapt it for my purposes.
+use any LLVM type, my go to tactic is to find somewhere in the LLVM source code that uses
+the type and adapt it for my purposes.
 
-Unfortunately *ValueToValueMap* is used in a lot of places.  I had the bright idea that cloning a function is kind of like inlining a function into an empty function, so I looked in InlineFunction.cpp.  I found this [snippet](http://llvm.org/docs/doxygen/html/InlineFunction_8cpp_source.html#l01434):
+Unfortunately for me, *ValueToValueMapTy* is used in a lot of places, so I
+grepped around for a long time.  Eventually, I had the bright idea that cloning a function
+is kind of like inlining a function into an empty function, so I looked in
+InlineFunction.cpp and I found this
+[snippet](http://llvm.org/docs/doxygen/html/InlineFunction_8cpp_source.html#l01434):
 
 {% highlight cpp%}
 ValueToValueMapTy VMap;
@@ -133,24 +137,26 @@ Now I'm ready to write my solution.
 
 I ensured that my new function was in this module by creating my a new function using
 [Module::getOrInsertionFunction](http://llvm.org/docs/doxygen/html/Module_8cpp_source.html#l00141).
-I gave the new function has the same type as the original with "_cloned" added to the end.
+I gave the new function the same type as the original, and the same name  with "_cloned" added to the end.
 
 Then I have a for-loop other both my new function's arguments and the old
-functions and I map them to each other with a *ValueToValueMapTy* instance.
+function's arguments and I map them to each other with a *ValueToValueMapTy* instance.
 
-I set *ModuleLevelChanges* to true, even thought I'm not 100% sure what that does.
+I set *ModuleLevelChanges* to true, even though I'm not 100% sure what that does.
 
-For the *Returns* parameter I made a new vector of return instructions using:
+For the *Returns* parameter, I made a new vector of return instructions using:
 
 {% highlight cpp%}
 SmallVector<ReturnInst*, 8> returns;
 {% endhighlight%}
 
 Currently, I do not store this vector anywhere, but I should.  I'll need to
-find any the return instructions later in my pass, but that's a job for another
+find all the return instructions later in my pass, but that's a job for another
 day.
 
-For the *NameSuffix* parameter, I passed "_cloned" just so I can always tell if the values are from a cloned function or not.  In the future I should use a smarter suffix.
+For the *NameSuffix* parameter, I passed "_cloned" just so I can always tell if
+the values are from a cloned function or not.  In the future I should use a
+smarter suffix.
 
 For the other parameters, I just left the default value.
 

@@ -26,7 +26,7 @@ lucky!
 
 Here is what I get when I Google "llvm clone function":
 
-![a screen shot](images/google_clone_function.png)
+![a screen shot](https://github.com/scottcarr/scottcarr.github.com/raw/master/images/google_clone_function.png)
 
 In the first result, I found a function called [CloneFunction](http://llvm.org/docs/doxygen/html/CloneFunction_8cpp_source.html#l00078).  It looks pretty promising:
 

@@ -20,8 +20,8 @@ newer to LLVM.
 #Step 1: Google It
 
 Whenever I face a problem with LLVM, the first thing I do is Google it.  Most
-of the time, there isn't a StackOverflow question of a blog post that perfectly
-fits my problem, but sometimes there is.  Always try Google you might get
+of the time, there isn't a StackOverflow question or a blog post that perfectly
+fits my problem, but sometimes there is.  Always try Google.  You might get
 lucky!
 
 Here is what I get when I Google "llvm clone function":

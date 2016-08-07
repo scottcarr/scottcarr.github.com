@@ -14,7 +14,8 @@ Each Mozilla intern gives at ten minute talk towards the end of their
 internship.  Ten minutes isn't much time, definitely not enough to give the
 details of 12 months worth of work, but my talk gives an overview and there are
 more details under the "Additional Links" tab of my talk's page on [Air
-Mozilla.](https://air.mozilla.org/making-mir-fly/)
+Mozilla.](https://air.mozilla.org/making-mir-fly/)  I worked on optimizations in the
+Rust compiler's mid-level representation (MIR).
 
 <iframe src="https://air.mozilla.org/making-mir-fly/video/" width="896" height="524" frameborder="0" allowfullscreen></iframe>
 

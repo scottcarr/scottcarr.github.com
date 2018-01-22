@@ -5,11 +5,11 @@ title: TrendMicro CTF Asia Pacific & Japan 2015 Programming 500 Writeup
 summary: You gotta know when to fold 'em.  Know when to hold 'em.
 ---
 
-#The Challenge
+# The Challenge
 
 I'm playing heads up blackjack.  I'm dealt Ace-2 and the dealer has 3 showing.  What's the probably of winning if: 1) I stand or 2) I kept playing.
 
-#The Details
+# The Details
 
 I'm not limited to just hitting once.  In fact, after each card I apply the decision criteria: if my probably of winning when I continue is greater than the probability of winning if I stand, I continue, otherwise I stand.  The probablity of winning at state N depends on the probability of winning at N+1, N+2, N+3, ... until I bust or stand.  The probability of winning if I continue is recursive in some sense.
 
@@ -17,7 +17,7 @@ While my strategy is dynamic, the dealer's strategy is static.  He stands anytim
 
 We play with two regular decks giving us 104 cards in total.
 
-#The Solution
+# The Solution
 
 ![Monte Carlo All the Things!](http://i.imgur.com/waepRcZ.jpg)
 
@@ -34,7 +34,7 @@ I made two key assumptions:
 
 ![an example blackjack strategy card](http://www.cardcountingtrainer.com/wp-content/uploads/2013/01/FinalBBSchart.png)
 
-#The Code
+# The Code
 
 The function *get_dealer_decision* applies the dealer's decision procedure given his current hand.
 
@@ -121,7 +121,7 @@ while stand_win_total <= 11) \
     
 Now I can play simulate my "real" strategy by using this "by-the-book" strategy and my dealer score distribution I calculated earlier.  Then I can do Monte Carlo.  I just simulate tons and tons of hands and eventually the probability of winning that I'm calculating based on my simulation converges to the real probablity.
 
-#The Answer
+# The Answer
 
 This simulation gives me the probability of winning if I continue.  What is the probability of winning if I stand?  Well, I already calculated that in my dealer simulation.  It's just the probability that the dealer doesn't bust if I stand with my starting hand. He will never stop at less than my starting score (13).
 

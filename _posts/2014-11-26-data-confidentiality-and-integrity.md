@@ -19,6 +19,10 @@ programmer never intended.  DCI's protection mechanism will protect these out of
 bounds reads and writes for a programmer selected subset of all the variables in
 the program.
 
+# Update
+
+The DCI code has been open sourced on [GitHub](https://github.com/hexhive/datashield).  You can read all the details about the completed prototype in [this paper](/images/ds.pdf) published in AsiaCCS 2017.
+
 [1]:http://en.wikipedia.org/wiki/Buffer_overflow_protection#Canaries 
 [2]:http://research.microsoft.com/apps/pubs/default.aspx?id=64250
 [3]:https://www.usenix.org/conference/osdi14/technical-sessions/presentation/kuznetsov

@@ -26,8 +26,14 @@ The `gets` function reads characters from `stdin` into a buffer until a newline 
 
 Calling `gets` securely is impossible!  No matter the size of the `str` buffer, an attacker can overflow it with an arbitrary amount of non-newline characters.  Every program that uses `gets` has a buffer overflow.  Luckily the C standard authors were smart and removed this from the C standard way back in ... 2011!
 
-Joking aside, the `gets` function is horribly designed and a historical mistake.  Modern systems (hopefully) warn you if you compile/run a program that calls gets, but because of the C community's obsession with backwards compatibility, I can write/compile/run/publish a C program in 2018 that uses a function that is known to be impossible to call securely.
+Joking aside, the `gets` function is poorly designed and a historical mistake.  Modern compilers/libraries (hopefully) warn you if you compile/run a program that calls `gets`, but because of the C community's obsession with backwards compatibility, I can write/compile/run/publish a C program in 2018 that uses a function that is known to be impossible to call securely.
 
 # Fundamentally Bad Idea 2: Unsized Buffers
 
-...
+The `gets` function is an easy target to pick on, and yes, it has been removed from the C standard, but the underlying reason why `gets` is insecure still exists in essentially every C program.  The problem is the C type system simply isn't expressive enough to safely use and implement APIs.  For example, let's look at the function `strcpy`.  It has the signature `char* strcpy(char* dst, const char* src)`.  With the specified behavior that `src` is copied to `dst`.  No possible implementation of `strcpy` can ensure that the security properties mentioned above hold.  If either `src` or `dst` are null, the program crashes.  If the `src` string is too long it causes a buffer overflow.  In fact, a call to strcpy is only safe if:
+
+1. Both `src` and `dst` point to allocated memory
+2. the data pointed to be `src` is a C string of length `n`
+3. the memory `dst` points to is big enough to hold `n` characters
+
+Yet, the implementer of `strcpy` has no guarantee any of those hold.

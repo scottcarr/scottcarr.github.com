@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: [Work in Progress] C is Fundamentally Memory Unsafe, or Why Rust Matters
+title: Work in Progress: C is Fundamentally Memory Unsafe, or Why Rust Matters
 summary: A point made not often enough -- until people stop writing new C code
 ---
 

@@ -69,6 +69,28 @@ A better example of 'valid values as error codes' is the standard library functi
 
 # Whose memory is it anyway?
 
-TODO: `getaddrinfo` example
+A quick refresher: C uses manual memory management.  The program requests a number of bytes of memory from the OS, usually by calling `malloc` or similar, and releases a whole chunk of bytes by calling `free` with a pointer to the start of the chunk of bytes.
 
-a surprising number of libc functions allocate memory
+At first glance, this seems straightforward, but manual memory management becomes very complicated quickly.  Each chunk of allocated memory should not overlap any other chunk and should be freed exactly once.   How does C help you ensure these properties across a large multi-threaded code base?  It doesn't.
+
+If a given API function returns a pointer to its callers, there are 3 possible scenarios -- ignoring the previously discussed `null`/non-`null` issue.  That is, the returned pointer points to:
+
+1. a contiguous chunk of heap memory that the API function allocated
+2. a data structure of non-contigous memory
+3. some longer lived data that the caller isn't supposed to free
+
+Functions like `malloc`, including `strdup`, fall under 1.  An example of 2 is `getaddrinfo`.  It returns the information in a linked list, so calling `free` on the head of the linked list would leave the rest of the list stranded in memory.  The function `getenv` is an example of 3.
+
+The problem is we cannot differentiate those scenarios based on C's type system.
+Compare:
+
+`char* strdup(const char* s1)`
+
+and
+
+`char* getenv(const char* name)`
+
+The types are the same, but the caller is supposed to call `free` on the return value of `strdup` but not `getenv`.  Our C compiler can't help us when we confuse the two.  In contrast, the Rust compiler ensures every variable has only one owner.
+
+
+

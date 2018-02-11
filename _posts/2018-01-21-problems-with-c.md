@@ -1,30 +1,26 @@
 ---
 layout: post
 published: true
-title: "Work in Progress: C is Fundamentally Insecure, or Why Rust Matters"
-summary: A point made not often enough -- until people stop writing new C code
+title: "Problems with Writing Safe C and Rust Mitigates them"
+summary: Even if you don't use Rust, understanding these issues will make you a better C programmer.
 ---
 
 ```
 THIS POST IS A WORK IN PROGRESS
 ```
 
-My PhD thesis topic was essentially, "How to retroactively make C programs safe."  I spent three years working on this problem.  Now, I'm convinced we should stop writing C code all together, and instead write new code in a language designed for safety (ex: Rust).
+My PhD thesis topic was essentially, "How to retroactively make C programs safe."  I spent three years working on this problem.  The longer I worked on C tooling, the more I realized the C ecosystem is a bunch of interdependent hacks.  Did you know glibc can only be built with gcc, and no other C compiler?  I'll refer to the C language specification, standard library and compiler collectively as "C."
 
-To be clear, it's impossible for me to "prove" to you that C is insecure -- in the sense of mathemtical or logic proof.  Instead, I will make a qualitative argument that the path of least resistance in C is writing buggy and insecure programs.  To write secure C code is difficult and expensive.  Secure C code is written *inspite of* C's underlying insecurity, not *because of* any positive attribute of the language.
+Unfortunately, decades of iteration on C tooling have not added up to secure C.  Some problems have existed since C's invention in the 1970s.
 
-But this article will not be all doom and gloom.  Many smart people have been working hard developing tools to build secure systems, and The Way Forward is to put these tools to the test and write production quality software. 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">All the amazing crypto attacks in the world, and real security still comes down to someone screwing up memcpy().</p>&mdash; Matthew Green (@matthew_d_green) <a href="https://twitter.com/matthew_d_green/status/835033668972326913?ref_src=twsrc%5Etfw">February 24, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-# Secure Systems
+The improvements that have been made are mitigations like Stack Cookies, DEP, and ASLR. The thinking behind these tools could be summarized as, "We know there will be vunlerabilities in our C code, so let's try to make exploiting them harder."  
 
-I will make my argument against C, and for a new safer language, concrete in the rest of the article using examples.  But before jumping into that, I'll give an informal definition of systems security.  We want the following properties in our systems:
+The state of the art in mitigations are sanitizers (AddressSaniziter, MemorySanitizer, ThreadSanitizer, etc).  My own PhD project could be called a [sanitizer.](https://github.com/hexhive/datashield)  Sanitizers add dynamic checks into C programs, then the user does exhaustive testing to find all the bugs -- or so the theory goes.  The lack of static tooling for finding vulnerabilities speaks to how incredibly difficult precise static analysis is for C.
 
-* P1: unexpected input should not crash our system
-* P2: attackers should not be able to craft inputs that allow them to hijack our system
-* P3: my system should not leak unintended data
-* P4: attackers should not able to corrupt our system's protected data
-
-The following examples illustrate that it's much easier to write C programs, that violate these properties, than it is to write secure C programs.
+With that in mind, the rest of this post will be examples of the fundamental problems with C that lead to vulnerabilies, and some hints at how Rust deals with them.
 
 # A standard library function that impossible to use securely: `gets`
 

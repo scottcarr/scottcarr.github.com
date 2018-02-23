@@ -6,6 +6,12 @@ permalink: /papers/
 
 # In chronological order:
 
+Nathan Burow, Derrick McKee, Scott A. Carr, and Mathias Payer.
+<i>CFIXX: Object Type Integrity for C++ Virtual Dispatch.</i>
+Network and Distributed System Security Symposium, 2018
+
+<hr>
+
 Yuseok Jeon, Priyam Biswas, Scott A. Carr, Byoungyoung Lee, and Mathias Payer.
 <i>HexType: Efficient Detection of Type Confusion Errors for C++.</i>
 ACM Conference on Computer and Communication Security 2017.

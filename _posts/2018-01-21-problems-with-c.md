@@ -1,8 +1,7 @@
-
 ---
 layout: post
 published: true
-title: Problems with Writing Safe C and How Rust Mitigates Them
+title: How Rust Mitigates Some of C's Problems
 summary: Even if you don't use Rust, understanding these issues will make you a better C programmer.
 ---
 

@@ -30,6 +30,10 @@ Scott A. Carr, Francesco Logozzo, Mathias Payer.  [*Automatic Contract Insertion
 
 <hr>
 
+Scott A. Carr. [*Compiler-based Mitigations of Vulnerabilities in Systems Software.*](/images/thesis_final.pdf) PhD Thesis.  Purdue University. May 2017.
+
+<hr>
+
 Nathan Burow, Scott A. Carr, Stefan Brunthaler, Mathias Payer, Joseph Nash, Per Larsen, Michael Franz. <i>Control-Flow Integrity: Precision Security and Performance</i>. ACM Computing Surveys. Volume 50. Issue 1. April 2017.
 
 <hr>
